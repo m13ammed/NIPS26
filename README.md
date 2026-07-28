@@ -39,7 +39,7 @@ Additionally, if you want to run the ablation studies for PDE-LTD in a single co
 
 The second benchmakr were done using the original repository code and datasets: [thuml/Neural-Solver-Library: A Library for Advanced Neural PDE Solvers.](https://github.com/thuml/Neural-Solver-Library). Only one L4 GPU with 24GB of memory was used, which might have been limiting for MSPT as it was regularly at 100% utilization. The hyperparameters for MSPT and Transolver are as defined in the aforementioned repository, but for PDE-Transformer we found that not all the improvements we came up with for training on the WELL datasets were helpful, and some options were helpful on some benchmark and not on others.
 
-go inside the neural_evals-main to run the experiments and run use the main.py file along with the config flags
+go inside the neural_evals-main to run the experiments and run use the ``` run.py ``` file along with the config flags
 
 #### Common Configuration
 It is worth noting that all of these experiments were done with both `carrier_tokens` and `periodic` options deactivated.
