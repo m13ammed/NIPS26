@@ -1,0 +1,14 @@
+h5py==3.8.0
+dgl
+scipy==1.7.3
+scikit-learn
+torch
+torch_geometric
+torch-cluster
+vtk
+timm
+einops
+seaborn
+pyvista
+sympy
+nystrom_attention
