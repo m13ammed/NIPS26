@@ -1,0 +1,25 @@
+python run.py \
+--gpu 1 \
+--data_path /data/fno \
+--loader ns \
+--geotype structured_2D \
+--scheduler StepLR \
+--task dynamic_autoregressive \
+--space_dim 2 \
+--lr 0.0025 \
+--weight_decay 0.0001 \
+--fun_dim 10 \
+--out_dim 1 \
+--model F_FNO \
+--n_hidden 20 \
+--n_heads 8 \
+--n_layers 8 \
+--mlp_ratio 2 \
+--slice_num 32 \
+--unified_pos 0 \
+--ref 8 \
+--batch-size 20 \
+--epochs 500 \
+--eval 0 \
+--max_grad_norm 0.1 \
+--save_name ns_F_FNO

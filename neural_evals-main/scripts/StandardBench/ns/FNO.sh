@@ -1,0 +1,23 @@
+python run.py \
+--gpu 5 \
+--data_path /data/fno/ \
+--loader ns \
+--geotype structured_2D \
+--task dynamic_autoregressive \
+--teacher_forcing 0 \
+--lr 0.0005 \
+--weight_decay 1e-4 \
+--scheduler StepLR \
+--space_dim 2 \
+--fun_dim 10 \
+--out_dim 1 \
+--model FNO \
+--n_hidden 64 \
+--n_heads 8 \
+--n_layers 8 \
+--unified_pos 0 \
+--ref 8 \
+--batch-size 20 \
+--epochs 500 \
+--eval 0 \
+--save_name ns_FNO_wo_teacher_forcing_wo_unipos_real_steplr

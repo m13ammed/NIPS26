@@ -1,0 +1,26 @@
+python run.py \
+--gpu 0 \
+--data_path ./data/ns \
+--loader ns \
+--geotype structured_2D \
+--task dynamic_autoregressive \
+--space_dim 2 \
+--fun_dim 10 \
+--out_dim 1 \
+--model MSPT \
+--n_hidden 256 \
+--n_heads 8 \
+--n_layers 8 \
+--mlp_ratio 2 \
+--unified_pos 1 \
+--ref 8 \
+--mspt_V 32 \
+--mspt_Q 1 \
+--mspt_pool mean \
+--batch-size 2 \
+--epochs 500 \
+--eval 0 \
+--torch_compile 1 \
+--vis_cbar_min -2.5 \
+--vis_cbar_max 2.5 \
+--save_name ns_MSPT

@@ -1,0 +1,26 @@
+python run.py \
+--gpu 6 \
+--data_path /data/fno \
+--loader ns \
+--geotype structured_2D \
+--task dynamic_autoregressive \
+--scheduler OneCycleLR \
+--space_dim 2 \
+--fun_dim 10 \
+--attn_type selfAttention \
+--out_dim 1 \
+--model ONO \
+--n_hidden 128 \
+--n_heads 8 \
+--n_layers 8 \
+--mlp_ratio 1 \
+--slice_num 32 \
+--unified_pos 0 \
+--ref 8 \
+--batch-size 8 \
+--epochs 500 \
+--eval 0 \
+--psi_dim 16 \
+--teacher_forcing 0 \
+--max_grad_norm 0.1 \
+--save_name ns_ONO

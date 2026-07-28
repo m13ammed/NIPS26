@@ -1,0 +1,32 @@
+python run.py \
+--gpu 4 \
+--data_path ./data/naca \
+--loader airfoil \
+--geotype structured_2D \
+--space_dim 2 \
+--fun_dim 2 \
+--out_dim 1 \
+--model PDE_Transformer_SPRINT \
+--n_hidden 96 \
+--n_heads 8 \
+--mlp_ratio 3 \
+--pdet_patch_size 2 \
+--pdet_window_size 8 \
+--pdet_depth 1,3,1 \
+--pdet_max_hidden 512 \
+--pdet_sprint_drop_mode 'l2' \
+--pdet_sprint_fusion_type 'gated' \
+--pdet_output_act 'gelu' \
+--pdet_use_upsample_act \
+--pdet_use_gated_mlp \
+--unified_pos 0 \
+--ref 8 \
+--batch-size 8 \
+--epochs 500 \
+--eval 0 \
+--lr 5.5e-04 \
+--weight_decay 1e-4 \
+--vis_cbar_min -0.05 \
+--vis_cbar_max 0.03 \
+--max_grad_norm 0.1 \
+--save_name airfoil_PDE_Transformer_SPRINT_gelu_up-act_gated_gmlp_lr5.5e4-ps2

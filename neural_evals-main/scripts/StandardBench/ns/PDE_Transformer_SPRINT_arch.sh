@@ -1,0 +1,32 @@
+python run.py \
+--gpu 1 \
+--data_path ./data/ns \
+--loader ns \
+--geotype structured_2D \
+--task dynamic_autoregressive \
+--space_dim 2 \
+--fun_dim 10 \
+--out_dim 1 \
+--model PDE_Transformer_SPRINT \
+--n_hidden 128 \
+--n_heads 8 \
+--mlp_ratio 4 \
+--slice_num 32 \
+--unified_pos 1 \
+--ref 8 \
+--pdet_patch_size 2 \
+--pdet_window_size 8 \
+--pdet_depth 2,4,2 \
+--pdet_max_hidden 512 \
+--pdet_sprint_drop_mode 'l2' \
+--pdet_sprint_fusion_type 'gated' \
+--pdet_output_act 'gelu' \
+--pdet_use_upsample_act \
+--pdet_use_gated_mlp \
+--lr 5.5e-04 \
+--batch-size 2 \
+--epochs 500 \
+--eval 0 \
+--vis_cbar_min -2.5 \
+--vis_cbar_max 2.5 \
+--save_name ns_PDE_Transformer_SPRINT_l2_gelu_up-act_gated_gmlp_lr5.5e4-ps2
