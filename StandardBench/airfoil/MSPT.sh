@@ -1,0 +1,27 @@
+python run.py \
+--gpu 4 \
+--data_path ./data/naca \
+--loader airfoil \
+--geotype structured_2D \
+--lr 0.001 \
+--weight_decay 1e-4 \
+--space_dim 2 \
+--fun_dim 2 \
+--out_dim 1 \
+--model MSPT \
+--n_hidden 128 \
+--n_heads 8 \
+--n_layers 8 \
+--mlp_ratio 2 \
+--unified_pos 0 \
+--ref 8 \
+--mspt_V 106 \
+--mspt_Q 1 \
+--mspt_pool mean \
+--batch-size 8 \
+--epochs 500 \
+--eval 0 \
+--vis_cbar_min -0.05 \
+--vis_cbar_max 0.03 \
+--max_grad_norm 0.1 \
+--save_name airfoil_MSPT

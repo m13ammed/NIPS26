@@ -1,0 +1,23 @@
+python run.py \
+--gpu 0 \
+--data_path ./data/ns \
+--loader ns \
+--geotype structured_2D \
+--task dynamic_autoregressive \
+--space_dim 2 \
+--fun_dim 10 \
+--out_dim 1 \
+--model Transolver \
+--n_hidden 256 \
+--n_heads 8 \
+--n_layers 8 \
+--mlp_ratio 2 \
+--slice_num 32 \
+--unified_pos 1 \
+--ref 8 \
+--batch-size 2 \
+--epochs 500 \
+--eval 0 \
+--vis_cbar_min -2.5 \
+--vis_cbar_max 2.5 \
+--save_name ns_Transolver

@@ -1,0 +1,24 @@
+python run.py \
+--gpu 0 \
+--data_path /data \
+--loader elas \
+--geotype unstructured \
+--scheduler CosineAnnealingLR \
+--space_dim 2 \
+--fun_dim 0 \
+--out_dim 1 \
+--normalize 1 \
+--model Transolver \
+--n_hidden 128 \
+--n_heads 8 \
+--n_layers 8 \
+--mlp_ratio 2 \
+--slice_num 64 \
+--unified_pos 0 \
+--ref 8 \
+--batch-size 1 \
+--epochs 500 \
+--eval 0 \
+--vis_cbar_min -2.5 \
+--vis_cbar_max 2.5 \
+--save_name elas_Transolver

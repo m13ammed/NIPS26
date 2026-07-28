@@ -1,0 +1,36 @@
+# Optional transfer-learning args (append to the command below):
+# --pretrained_ckpt ./checkpoints/your_pretrained_checkpoint.pt
+# --pdet_pretrained_in_channels 2
+# --pdet_pretrained_out_channels 2
+# --pretrained_strict 0
+
+python run.py \
+--gpu 0 \
+--data_path ./data/naca \
+--loader airfoil \
+--geotype structured_2D \
+--space_dim 2 \
+--fun_dim 2 \
+--out_dim 1 \
+--model PDE_Transformer_SPRINT \
+--n_hidden 96 \
+--n_heads 8 \
+--mlp_ratio 3 \
+--pretrained_ckpt ./last.ckpt \
+--pdet_pretrained_in_channels 2 \
+--pdet_pretrained_out_channels 2 \
+--pdet_patch_size 4 \
+--pdet_window_size 8 \
+--pdet_depth 1,3,1 \
+--pdet_max_hidden 512 \
+--unified_pos 0 \
+--ref 8 \
+--batch-size 8 \
+--epochs 500 \
+--eval 0 \
+--lr 5.5e-04 \
+--weight_decay 1e-4 \
+--vis_cbar_min -0.05 \
+--vis_cbar_max 0.03 \
+--max_grad_norm 0.1 \
+--save_name airfoil_PDE_Transformer_SPRINT-lr5.5e4-ps4-pretrained-1000classes
