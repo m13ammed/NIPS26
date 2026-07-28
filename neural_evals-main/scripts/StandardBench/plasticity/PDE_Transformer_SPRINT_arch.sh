@@ -1,0 +1,34 @@
+python run.py \
+--gpu 0 \
+--data_path ./data/plasticity \
+--loader plas \
+--geotype structured_2D \
+--task dynamic_conditional \
+--ntrain 900 \
+--ntest 80 \
+--T_out 20 \
+--time_input 1 \
+--space_dim 2 \
+--fun_dim 1 \
+--out_dim 4 \
+--model PDE_Transformer_SPRINT \
+--n_hidden 96 \
+--n_heads 8 \
+--mlp_ratio 4 \
+--pdet_patch_size 4 \
+--pdet_window_size 8 \
+--pdet_depth 2,4,2 \
+--pdet_sprint_drop_mode 'l2' \
+--pdet_sprint_fusion_type 'gated' \
+--pdet_output_act 'gelu' \
+--pdet_use_upsample_act \
+--pdet_use_gated_mlp \
+--pdet_max_hidden 512 \
+--batch-size 8 \
+--epochs 500 \
+--eval 0 \
+--lr 5.5e-04 \
+--use_ema_clip 1 \
+--vis_cbar_min -0.08 \
+--vis_cbar_max 0.08 \
+--save_name plas_PDE_Transformer_SPRINT_l2_gelu_up-act_gated_gmlp_lr5.5e4-ema_clip

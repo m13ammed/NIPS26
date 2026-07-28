@@ -1,0 +1,26 @@
+python run.py \
+--gpu 1 \
+--data_path ./data/pipe \
+--loader pipe \
+--geotype structured_2D \
+--space_dim 2 \
+--fun_dim 2 \
+--out_dim 1 \
+--model PDE_Transformer \
+--n_hidden 96 \
+--n_heads 8 \
+--mlp_ratio 3 \
+--pdet_patch_size 2 \
+--pdet_window_size 8 \
+--pdet_depth 1,3,1 \
+--pdet_max_hidden 512 \
+--unified_pos 0 \
+--ref 8 \
+--batch-size 4 \
+--epochs 500 \
+--eval 0 \
+--lr 5.5e-04 \
+--vis_cbar_min -0.0025 \
+--vis_cbar_max 0.0025 \
+--save_name pipe_PDE_Transformer-lr5.5e4-ps2 \
+"$@"

@@ -1,0 +1,32 @@
+python run.py \
+--gpu 1 \
+--data_path ./data/darcy \
+--loader darcy \
+--geotype structured_2D \
+--task steady \
+--normalize 1 \
+--derivloss 1 \
+--downsamplex 5 \
+--downsampley 5 \
+--space_dim 2 \
+--fun_dim 1 \
+--out_dim 1 \
+--model PDE_Transformer_SPRINT \
+--n_hidden 96 \
+--n_heads 4 \
+--mlp_ratio 4 \
+--pdet_patch_size 1 \
+--pdet_window_size 8 \
+--pdet_depth 2,4,2 \
+--pdet_max_hidden 512 \
+--pdet_output_act 'gelu' \
+--pdet_use_upsample_act \
+--unified_pos 1 \
+--ref 8 \
+--batch-size 4 \
+--epochs 500 \
+--eval 0 \
+--lr 5.5e-04 \
+--vis_cbar_min -0.0003 \
+--vis_cbar_max 0.0003 \
+--save_name darcy_PDE_Transformer_SPRINT_gelu_up-act_lr5.5e4-ps1
