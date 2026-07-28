@@ -42,7 +42,6 @@ The second benchmakr were done using the original repository code and datasets: 
 go inside the neural_evals-main to run the experiments and run use the ``` run.py ``` file along with the config flags
 
 #### Common Configuration
-It is worth noting that all of these experiments were done with both `carrier_tokens` and `periodic` options deactivated.
 ```sh
 --pdet_window_size 8 \
 --pdet_max_hidden 512 \
