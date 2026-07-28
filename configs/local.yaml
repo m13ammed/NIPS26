@@ -1,0 +1,11 @@
+paths:
+  PBDL_index:
+    2D_APE_xxl: ./datasets_256/
+    2D_WELL: ./datasets/
+machine:
+  devices: 4
+  accelerator: gpu
+  strategy: auto
+
+batch_size: 16
+max_epochs: 50

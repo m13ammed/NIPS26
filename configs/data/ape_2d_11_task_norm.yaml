@@ -1,0 +1,26 @@
+target: data.MultiDataModule
+params:
+  path_index: ${paths.PBDL_index}
+  dataset_names:
+    - "diff"
+    - "hyp"
+    - "burgers"
+    - "kdv"
+    - "fisher"
+    - "gs_alpha"
+    - "gs_beta"
+    - "gs_epsilon"
+    - "gs_theta"
+    - "gs_kappa"
+    - "kolm_flow"
+  dataset_type: "2D_APE_xxl"
+  unrolling_steps: ${unrolling_steps}
+  test_unrolling_steps: ${test_unrolling_steps}
+  batch_size: ${batch_size}
+  num_workers: 8
+  cache_strategy: "none"
+  different_resolution_strategy: "none"
+  normalize_data: "mean-std"
+  normalize_const: "mean-std"
+  downsample_factor: 1
+  max_channels: 2
