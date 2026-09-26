@@ -18,7 +18,7 @@ You can run the training script like this:
 python main.py -c configs/CONFIG.yaml -n NAME_OF_RUN [overrides]
 ```
 
-Where `CONFIG` is either `pde-mc-mse` for the original model or `pde-ltd-mc-mse` for PDE-LTD. Setting the training options in the yaml files should be straightforward, and any overrides can be passed in the command line. For example, to train PDE-LTD you can run:
+Where `CONFIG` is either `pde-mc-mse` for the original model or `pde-ltd-mc-mse` for LITE. Setting the training options in the yaml files should be straightforward, and any overrides can be passed in the command line. For example, to train LITE you can run:
 
 ```bash
 python main.py -c configs/pde-ltd-mc-mse.yaml -n pde-ltd-mc-s-mse \
