@@ -1,5 +1,4 @@
-# PDE-LTD Transformer
-
+# LITE
 This codebase is adapted from [PDE-Transformer](https://github.com/tum-pbs/pde-transformer).
 
 ## Environment Setup
